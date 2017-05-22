@@ -8,7 +8,5 @@ import { Component, ChangeDetectionStrategy, Input, OnInit, ViewEncapsulation } 
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    public prepareRoute(outlet) {
-
-    }
+    public prepareRoute(outlet) { }
 }
