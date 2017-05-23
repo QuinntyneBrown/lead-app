@@ -1,12 +1,12 @@
 import { Component, ChangeDetectionStrategy, Input, OnInit, ViewEncapsulation } from "@angular/core";
 
 @Component({
-    template: require("./app.component.html"),
-    styles: [require("./app.component.scss")],
+    templateUrl: "./app.component.html",
+    styleUrls: ["./app.component.css"],
     selector: "app",
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    public prepareRoute(outlet) { }
+    public prepareRoute(outlet:any) { }
 }

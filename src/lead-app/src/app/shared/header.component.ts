@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy, Input, OnInit } from "@angular/core";
 
 @Component({
-    template: require("./header.component.html"),
-    styles: [require("./header.component.scss")],
+    templateUrl: "./header.component.html",
+    styleUrls: ["./header.component.css"],
     selector: "ce-header",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

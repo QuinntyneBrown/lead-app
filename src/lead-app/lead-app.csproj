@@ -76,22 +76,22 @@
     <Content Include=".gitignore" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
+    <Content Include="src\app\app.component.css">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\app.component.html">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\app.component.scss">
-      <DependentUpon>app.component.ts</DependentUpon>
+    <Content Include="src\app\leads\lead.component.css">
+      <DependentUpon>lead.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\leads\lead.component.html">
       <DependentUpon>lead.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\lead.component.scss">
-      <DependentUpon>lead.component.ts</DependentUpon>
-    </Content>
-    <Content Include="src\app\shared\header.component.html">
+    <Content Include="src\app\shared\header.component.css">
       <DependentUpon>header.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\header.component.scss">
+    <Content Include="src\app\shared\header.component.html">
       <DependentUpon>header.component.ts</DependentUpon>
     </Content>
     <Content Include="webpack.config.js" />
@@ -126,6 +126,7 @@
     <TypeScriptCompile Include="src\app\shared\index.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
+    <None Include="tsconfig-aot.json" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
