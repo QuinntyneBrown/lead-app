@@ -7,8 +7,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{116211A4-56A1-48A6-8F47-EE167854F91B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -23,8 +22,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -76,20 +74,11 @@
     <Content Include=".gitignore" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
-    <Content Include="src\app\app.component.css">
-      <DependentUpon>app.component.ts</DependentUpon>
-    </Content>
     <Content Include="src\app\app.component.html">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\lead.component.css">
-      <DependentUpon>lead.component.ts</DependentUpon>
-    </Content>
     <Content Include="src\app\leads\lead.component.html">
       <DependentUpon>lead.component.ts</DependentUpon>
-    </Content>
-    <Content Include="src\app\shared\header.component.css">
-      <DependentUpon>header.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\shared\header.component.html">
       <DependentUpon>header.component.ts</DependentUpon>
@@ -99,6 +88,15 @@
     <Content Include="tsconfig.json" />
     <Content Include="src\styles\base\_all.scss" />
     <Content Include="src\styles\base\_grid-settings.scss" />
+    <Content Include="src\app\leads\lead.component.scss">
+      <DependentUpon>lead.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\shared\header.component.scss">
+      <DependentUpon>header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\app.component.scss">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,7 +124,7 @@
     <TypeScriptCompile Include="src\app\shared\index.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
-    <None Include="tsconfig-aot.json" />
+    <TypeScriptCompile Include="src\app\shared\api.service.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -151,8 +149,7 @@
           <IISUrl>http://localhost:53063/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

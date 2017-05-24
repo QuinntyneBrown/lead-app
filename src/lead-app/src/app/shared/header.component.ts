@@ -1,10 +1,9 @@
 import { Component, ChangeDetectionStrategy, Input, OnInit } from "@angular/core";
 
 @Component({
-    templateUrl: "./header.component.html",
-    styleUrls: ["./header.component.css"],
-    selector: "ce-header",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    template: require("./header.component.html"),
+    styles: [require("./header.component.scss")],
+    selector: "ce-header"
 })
 export class HeaderComponent implements OnInit { 
     ngOnInit() {
