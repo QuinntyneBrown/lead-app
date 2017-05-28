@@ -18,6 +18,5 @@ export class AppComponent implements OnInit {
     public prepareRoute(outlet: any) { }
 
     public headerContentBlock: any;
-
     
 }

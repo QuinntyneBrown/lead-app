@@ -1,13 +1,8 @@
-import { Component, ChangeDetectionStrategy, Input, OnInit } from "@angular/core";
+import {Component} from "@angular/core";
 
 @Component({
     template: require("./mega-header.component.html"),
     styles: [require("./mega-header.component.scss")],
-    selector: "mega-header",
-    changeDetection: ChangeDetectionStrategy.OnPush
+    selector: "ce-mega-header"
 })
-export class MegaHeaderComponent implements OnInit { 
-    ngOnInit() {
-
-    }
-}
+export class MegaHeaderComponent  { }
