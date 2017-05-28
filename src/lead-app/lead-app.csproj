@@ -7,8 +7,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{116211A4-56A1-48A6-8F47-EE167854F91B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -23,8 +22,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -91,17 +89,17 @@
     <Content Include="src\app\leads\cta.component.scss">
       <DependentUpon>cta.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\header-cta.component.html">
-      <DependentUpon>header-cta.component.ts</DependentUpon>
-    </Content>
-    <Content Include="src\app\leads\header-cta.component.scss">
-      <DependentUpon>header-cta.component.ts</DependentUpon>
-    </Content>
     <Content Include="src\app\leads\lead.component.html">
       <DependentUpon>lead.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\leads\header.component.html">
       <DependentUpon>header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\leads\mega-header.component.html">
+      <DependentUpon>mega-header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\leads\mega-header.component.scss">
+      <DependentUpon>mega-header.component.ts</DependentUpon>
     </Content>
     <Content Include="webpack.config.js" />
     <Content Include="package.json" />
@@ -144,8 +142,8 @@
     <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\app\api.service.ts" />
     <TypeScriptCompile Include="src\app\leads\cta.component.ts" />
-    <TypeScriptCompile Include="src\app\leads\header-cta.component.ts" />
     <TypeScriptCompile Include="src\app\leads\add-contact-form.component.ts" />
+    <TypeScriptCompile Include="src\app\leads\mega-header.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -170,8 +168,7 @@
           <IISUrl>http://localhost:53063/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
