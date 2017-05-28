@@ -21,6 +21,16 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+[Aa]ot/
+[Dd]ist/
+
+src/**/*.js
+src/**/*.js.map
+src/**/*.css
+src/**/*.css.map
+
+dist
+tests
 
 # Visual Studio 2015 cache/options directory
 .vs/
