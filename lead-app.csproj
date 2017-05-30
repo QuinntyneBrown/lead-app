@@ -85,11 +85,17 @@
     <Content Include="src\app\leads\add-contact-form.component.scss">
       <DependentUpon>add-contact-form.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\cta.component.html">
-      <DependentUpon>cta.component.ts</DependentUpon>
+    <Content Include="src\app\leads\call-to-action.component.html">
+      <DependentUpon>call-to-action.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\cta.component.scss">
-      <DependentUpon>cta.component.ts</DependentUpon>
+    <Content Include="src\app\leads\call-to-action.component.scss">
+      <DependentUpon>call-to-action.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\leads\content-block.component.html">
+      <DependentUpon>content-block.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\leads\content-block.component.scss">
+      <DependentUpon>content-block.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\leads\lead.component.html">
       <DependentUpon>lead.component.ts</DependentUpon>
@@ -106,8 +112,6 @@
     <Content Include="webpack.config.js" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
-    <Content Include="src\styles\base\_all.scss" />
-    <Content Include="src\styles\base\_grid-settings.scss" />
     <Content Include="src\app\leads\lead.component.scss">
       <DependentUpon>lead.component.ts</DependentUpon>
     </Content>
@@ -140,9 +144,10 @@
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\app\api.service.ts" />
-    <TypeScriptCompile Include="src\app\leads\cta.component.ts" />
     <TypeScriptCompile Include="src\app\leads\add-contact-form.component.ts" />
     <TypeScriptCompile Include="src\app\leads\mega-header.component.ts" />
+    <TypeScriptCompile Include="src\app\leads\call-to-action.component.ts" />
+    <TypeScriptCompile Include="src\app\leads\content-block.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
