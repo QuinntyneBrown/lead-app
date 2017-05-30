@@ -85,6 +85,12 @@
     <Content Include="src\app\leads\add-contact-form.component.scss">
       <DependentUpon>add-contact-form.component.ts</DependentUpon>
     </Content>
+    <Content Include="src\app\leads\button.component.html">
+      <DependentUpon>button.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\leads\button.component.scss">
+      <DependentUpon>button.component.ts</DependentUpon>
+    </Content>
     <Content Include="src\app\leads\call-to-action.component.html">
       <DependentUpon>call-to-action.component.ts</DependentUpon>
     </Content>
@@ -148,6 +154,7 @@
     <TypeScriptCompile Include="src\app\leads\mega-header.component.ts" />
     <TypeScriptCompile Include="src\app\leads\call-to-action.component.ts" />
     <TypeScriptCompile Include="src\app\leads\content-block.component.ts" />
+    <TypeScriptCompile Include="src\app\leads\button.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

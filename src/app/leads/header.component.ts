@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation, Input} from "@angular/core";
+import {Component, ViewEncapsulation, Input, ElementRef} from "@angular/core";
 
 @Component({
     template: require("./header.component.html"),
@@ -7,9 +7,17 @@ import {Component, ViewEncapsulation, Input} from "@angular/core";
     encapsulation: ViewEncapsulation.Native
 })
 export class HeaderComponent {
+    constructor(private _elementRef: ElementRef) { }
+
     @Input()
     public headline1: string;
 
     @Input()
     public headline2: string;
+
+    @Input()
+    public set fontFamily(value: string) {
+        (this._elementRef.nativeElement as HTMLElement).style.setProperty("--font-family", value);
+    }
+
 }

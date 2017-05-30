@@ -10,12 +10,12 @@ import {FormGroup,FormControl,Validators} from "@angular/forms";
 export class AddContactFormComponent {
     
     public form = new FormGroup({
-        email: new FormControl(0, Validators.required),
-        firstname: new FormControl(0, Validators.required),
-        lastname: new FormControl(0, Validators.required),
-        phoneNumber: new FormControl(0, Validators.required),
-        streetAddress: new FormControl(0, Validators.required),
-        city: new FormControl(0, Validators.required)
+        email: new FormControl("", Validators.required),
+        firstname: new FormControl("", Validators.required),
+        lastname: new FormControl("", Validators.required),
+        phoneNumber: new FormControl("", Validators.required),
+        streetAddress: new FormControl("", Validators.required),
+        city: new FormControl("", Validators.required)
     });
 
     @Input()
