@@ -1,4 +1,5 @@
 import {Component, ViewEncapsulation} from "@angular/core";
+import {ApiService} from "./api.service";
 
 @Component({
     template: require("./lead.component.html"),
@@ -6,4 +7,6 @@ import {Component, ViewEncapsulation} from "@angular/core";
     selector: "ce-lead",
     encapsulation: ViewEncapsulation.Native
 })
-export class LeadComponent { }
+export class LeadComponent {
+    constructor(private _apiService: ApiService) { }
+}
