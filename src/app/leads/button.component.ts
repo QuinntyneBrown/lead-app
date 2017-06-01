@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from "@angular/core";
+import {Component, ViewEncapsulation, Output, EventEmitter} from "@angular/core";
 
 @Component({
     template: require("./button.component.html"),
@@ -6,4 +6,7 @@ import {Component, ViewEncapsulation} from "@angular/core";
     selector: "ce-button",
     encapsulation: ViewEncapsulation.Native
 })
-export class ButtonComponent { }
+export class ButtonComponent {
+    @Output()
+    public click: EventEmitter<any> = new EventEmitter();
+}

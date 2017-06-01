@@ -1,3 +1,12 @@
-<ce-mega-header></ce-mega-header>
-<ce-content-block></ce-content-block>
-<ce-add-contact-form></ce-add-contact-form>
+<ce-mega-header headline1="{{ header.headline1 }}"
+                headline2="{{ header.headline2 }}"
+                headline="{{ callToAction.headline }}"
+                body="{{ callToAction.body }}"
+                buttonCaption="{{ callToAction.buttonCaption }}"
+                callToAction="{{ callToAction.callToAction }}"
+                finalNote="{{ callToAction.finalNote }}">
+</ce-mega-header>
+<ce-content-block headline1="{{ contentBlock.headline1 }}"
+                  imageUrl="{{ contentBlock.imageUrl }}"
+                  body="{{ contentBlock.body }}"></ce-content-block>
+<ce-add-contact-form (onSubmit)="tryToSaveContact($event)"></ce-add-contact-form>

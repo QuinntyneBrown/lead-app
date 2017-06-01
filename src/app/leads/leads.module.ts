@@ -10,6 +10,8 @@ import {HeaderComponent} from "./header.component";
 import {LeadComponent} from "./lead.component";
 import {MegaHeaderComponent} from "./mega-header.component";
 
+import {ApiService} from "./api.service";
+
 const declarables = [
     AddContactFormComponent,
     ButtonComponent,
@@ -20,9 +22,12 @@ const declarables = [
     MegaHeaderComponent
 ];
 
+const providers = [ApiService];
+
 @NgModule({
     imports: [CommonModule, ReactiveFormsModule],
     exports: [declarables],
-    declarations: [declarables]
+    declarations: [declarables],
+    providers: providers
 })
 export class LeadsModule { }
