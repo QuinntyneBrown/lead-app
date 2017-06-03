@@ -30,7 +30,7 @@
     </span>
 
     <button type="submit"
-            (click)="onSubmit.emit({ value: this.form.value })"
+            (click)="submitEvent.emit({ value: this.form.value })"
             [disabled]="form.invalid">
         Submit
     </button>
