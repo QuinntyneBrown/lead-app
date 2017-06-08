@@ -21,7 +21,9 @@ export class LeadComponent implements OnInit {
 
     public callToAction: any = {};
 
-    public header: any = {};
+    public header: any = {
+        headline1: "Headline"
+    };
 
     public contentBlock: any = {
         body:""

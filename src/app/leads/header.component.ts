@@ -14,10 +14,4 @@ export class HeaderComponent {
 
     @Input()
     public headline2: string;
-
-    @Input()
-    public set fontFamily(value: string) {
-        (this._elementRef.nativeElement as HTMLElement).style.setProperty("--font-family", value);
-    }
-
 }
