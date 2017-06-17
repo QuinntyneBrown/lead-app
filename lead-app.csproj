@@ -7,8 +7,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{116211A4-56A1-48A6-8F47-EE167854F91B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -23,8 +22,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -85,34 +83,34 @@
     <Content Include="src\app\leads\add-contact-form.component.scss">
       <DependentUpon>add-contact-form.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\button.component.html">
+    <Content Include="src\app\shared\components\button.component.html">
       <DependentUpon>button.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\button.component.scss">
+    <Content Include="src\app\shared\components\button.component.scss">
       <DependentUpon>button.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\call-to-action.component.html">
+    <Content Include="src\app\shared\components\call-to-action.component.html">
       <DependentUpon>call-to-action.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\call-to-action.component.scss">
+    <Content Include="src\app\shared\components\call-to-action.component.scss">
       <DependentUpon>call-to-action.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\content-block.component.html">
+    <Content Include="src\app\shared\components\content-block.component.html">
       <DependentUpon>content-block.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\content-block.component.scss">
+    <Content Include="src\app\shared\components\content-block.component.scss">
       <DependentUpon>content-block.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\leads\lead.component.html">
       <DependentUpon>lead.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\header.component.html">
+    <Content Include="src\app\shared\components\header.component.html">
       <DependentUpon>header.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\mega-header.component.html">
+    <Content Include="src\app\shared\components\mega-header.component.html">
       <DependentUpon>mega-header.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\mega-header.component.scss">
+    <Content Include="src\app\shared\components\mega-header.component.scss">
       <DependentUpon>mega-header.component.ts</DependentUpon>
     </Content>
     <Content Include="webpack.config.js" />
@@ -121,7 +119,7 @@
     <Content Include="src\app\leads\lead.component.scss">
       <DependentUpon>lead.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\header.component.scss">
+    <Content Include="src\app\shared\components\header.component.scss">
       <DependentUpon>header.component.ts</DependentUpon>
     </Content>
     <Content Include="src\app\app.component.scss">
@@ -144,7 +142,7 @@
     <TypeScriptCompile Include="src\app\rxjs-extensions.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\app\leads\lead.component.ts" />
-    <TypeScriptCompile Include="src\app\leads\header.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\components\header.component.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\leads\leads.module.ts" />
@@ -153,10 +151,12 @@
     <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\app\leads\api.service.ts" />
     <TypeScriptCompile Include="src\app\leads\add-contact-form.component.ts" />
-    <TypeScriptCompile Include="src\app\leads\mega-header.component.ts" />
-    <TypeScriptCompile Include="src\app\leads\call-to-action.component.ts" />
-    <TypeScriptCompile Include="src\app\leads\content-block.component.ts" />
-    <TypeScriptCompile Include="src\app\leads\button.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\components\mega-header.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\components\call-to-action.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\components\content-block.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\components\button.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
+    <TypeScriptCompile Include="src\app\shared\index.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -183,8 +183,7 @@
           <IISUrl>http://localhost:53063/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
