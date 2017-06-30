@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {ReactiveFormsModule} from '@angular/forms';
+import { ConfigurationModule } from "../configuration";
 
 import {AddContactFormComponent} from "./add-contact-form.component";
 import {ButtonComponent} from "./button.component";
@@ -25,7 +26,7 @@ const declarables = [
 const providers = [ApiService];
 
 @NgModule({
-    imports: [CommonModule, ReactiveFormsModule],
+    imports: [CommonModule, ReactiveFormsModule, ConfigurationModule],
     exports: [declarables],
     declarations: [declarables],
     providers: providers
