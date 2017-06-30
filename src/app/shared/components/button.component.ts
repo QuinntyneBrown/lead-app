@@ -1,8 +1,8 @@
 import {Component, ViewEncapsulation, Output, EventEmitter} from "@angular/core";
 
 @Component({
-    template: require("./button.component.html"),
-    styles: [require("./button.component.css")],
+    templateUrl: "./button.component.html",
+    styleUrls: ["./button.component.css"],
     selector: "ce-button",
     encapsulation: ViewEncapsulation.Native
 })

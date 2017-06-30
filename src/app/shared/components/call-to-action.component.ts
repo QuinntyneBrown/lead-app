@@ -1,8 +1,8 @@
 import {Component, ViewEncapsulation, Input} from "@angular/core";
 
 @Component({
-    template: require("./call-to-action.component.html"),
-    styles: [require("./call-to-action.component.css")],
+    templateUrl: "./call-to-action.component.html",
+    styleUrls: ["./call-to-action.component.css"],
     selector: "ce-call-to-action",
     encapsulation: ViewEncapsulation.Native
 })

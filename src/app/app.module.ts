@@ -8,10 +8,9 @@ import {FormsModule} from '@angular/forms';
 import "./rxjs-extensions";
 
 import {AppComponent} from './app.component';
-import { LeadsModule } from "./leads";
+import {LeadsModule} from "./leads";
 
 import {routing} from "./app.routing";
-
 
 const declarables = [
     AppComponent

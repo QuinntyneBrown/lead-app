@@ -2,8 +2,8 @@ import {Component, OnInit, ViewEncapsulation} from "@angular/core";
 import {ApiService} from "./api.service";
 
 @Component({
-    template: require("./lead.component.html"),
-    styles: [require("./lead.component.css")],
+    templateUrl: "./lead.component.html",
+    styleUrls: ["./lead.component.css"],
     selector: "ce-lead",
     encapsulation: ViewEncapsulation.Native
 })

@@ -1,13 +1,12 @@
 import {Component, ViewEncapsulation, Input} from "@angular/core";
 
 @Component({
-    template: require("./content-block.component.html"),
-    styles: [require("./content-block.component.css")],
+    templateUrl: "./content-block.component.html",
+    styleUrls: ["./content-block.component.css"],
     selector: "ce-content-block",
     encapsulation: ViewEncapsulation.Native
 })
 export class ContentBlockComponent {
-
     @Input()
     public imageUrl: string;
 

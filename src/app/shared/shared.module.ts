@@ -1,13 +1,27 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from "@angular/common";
+import {NgModule} from '@angular/core';
+import {CommonModule} from "@angular/common";
+import {ReactiveFormsModule,FormsModule} from '@angular/forms';
+import {AddContactFormComponent} from './components/add-contact-form.component';
+import {ButtonComponent} from "./components/button.component";
+import {CallToActionComponent} from "./components/call-to-action.component";
+import {HeaderComponent} from "./components/header.component";
+import {MegaHeaderComponent} from "./components/mega-header.component";
+import {HeadersHelper} from "./headers-helper";
+import {ContentBlockComponent} from "./components/content-block.component";
 
-import { SharedComponent } from './shared.component';
+const declarables = [
+    AddContactFormComponent,
+    ButtonComponent,
+    CallToActionComponent,
+    ContentBlockComponent,
+    HeaderComponent,
+    MegaHeaderComponent
+];
 
-const declarables = [SharedComponent];
-const providers = [];
+const providers = [HeadersHelper];
 
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, ReactiveFormsModule,FormsModule],
     exports: [declarables],
     declarations: [declarables],
     providers: providers

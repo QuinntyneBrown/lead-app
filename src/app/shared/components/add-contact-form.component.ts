@@ -11,8 +11,8 @@ interface Contact {
 }
 
 @Component({
-    template: require("./add-contact-form.component.html"),
-    styles: [require("./add-contact-form.component.css")],
+    templateUrl: "./add-contact-form.component.html",
+    styleUrls: ["./add-contact-form.component.css"],
     selector: "ce-add-contact-form",
     encapsulation: ViewEncapsulation.Native
 })

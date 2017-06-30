@@ -1,8 +1,8 @@
 import {Component, ViewEncapsulation, Input} from "@angular/core";
 
 @Component({
-    template: require("./mega-header.component.html"),
-    styles: [require("./mega-header.component.css")],
+    templateUrl: "./mega-header.component.html",
+    styleUrls: ["./mega-header.component.css"],
     selector: "ce-mega-header",
     encapsulation: ViewEncapsulation.Native
 })
