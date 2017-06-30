@@ -1,5 +1,5 @@
-﻿import { Routes, RouterModule } from '@angular/router';
-import { LeadComponent } from "./leads";
+﻿import {Routes,RouterModule} from '@angular/router';
+import {LeadComponent} from "./leads";
 
 export const routes: Routes = [
     {

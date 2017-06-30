@@ -100,6 +100,7 @@
       <DependentUpon>content-block.component.html</DependentUpon>
     </Content>
     <Content Include="src\app\shared\components\content-block.component.html" />
+    <Content Include="src\app\shared\components\forms.css" />
     <Content Include="src\app\shared\components\header.component.css">
       <DependentUpon>header.component.html</DependentUpon>
     </Content>
@@ -151,7 +152,6 @@
     <TypeScriptCompile Include="src\app\shared\components\mega-header.component.ts">
       <DependentUpon>mega-header.component.html</DependentUpon>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\app\shared\constants.ts" />
     <TypeScriptCompile Include="src\app\shared\headers-helper.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />

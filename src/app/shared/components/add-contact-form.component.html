@@ -29,9 +29,9 @@
         required
     </span>
 
-    <button type="submit"
-            (click)="submitEvent.emit({ value: this.form.value })"
+    <ce-button type="submit"
+            (click)="submitEvent.emit({ detail: { value: this.form.value } })"
             [disabled]="form.invalid">
         Submit
-    </button>
+    </ce-button>
 </form>
