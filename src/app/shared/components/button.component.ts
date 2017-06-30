@@ -2,7 +2,7 @@ import {Component, ViewEncapsulation, Output, EventEmitter} from "@angular/core"
 
 @Component({
     template: require("./button.component.html"),
-    styles: [require("./button.component.scss")],
+    styles: [require("./button.component.css")],
     selector: "ce-button",
     encapsulation: ViewEncapsulation.Native
 })

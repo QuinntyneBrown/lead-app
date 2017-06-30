@@ -12,7 +12,7 @@ interface Contact {
 
 @Component({
     template: require("./add-contact-form.component.html"),
-    styles: [require("./add-contact-form.component.scss")],
+    styles: [require("./add-contact-form.component.css")],
     selector: "ce-add-contact-form",
     encapsulation: ViewEncapsulation.Native
 })

@@ -2,7 +2,7 @@ import {Component, ViewEncapsulation, Input, ElementRef} from "@angular/core";
 
 @Component({
     template: require("./header.component.html"),
-    styles: [require("./header.component.scss")],
+    styles: [require("./header.component.css")],
     selector: "ce-header",
     encapsulation: ViewEncapsulation.Native
 })

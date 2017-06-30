@@ -3,7 +3,7 @@ import {ApiService} from "./api.service";
 
 @Component({
     template: require("./lead.component.html"),
-    styles: [require("./lead.component.scss")],
+    styles: [require("./lead.component.css")],
     selector: "ce-lead",
     encapsulation: ViewEncapsulation.Native
 })

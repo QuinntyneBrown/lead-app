@@ -25,7 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.4</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
     <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
@@ -79,51 +79,37 @@
     <Content Include="src\app\app.component.html">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\components\add-contact-form.component.html">
-      <DependentUpon>add-contact-form.component.ts</DependentUpon>
+    <Content Include="src\app\leads\lead.component.css">
+      <DependentUpon>lead.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\components\add-contact-form.component.scss">
-      <DependentUpon>add-contact-form.component.ts</DependentUpon>
+    <Content Include="src\app\leads\lead.component.html" />
+    <Content Include="src\app\shared\components\add-contact-form.component.css">
+      <DependentUpon>add-contact-form.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\components\button.component.html">
-      <DependentUpon>button.component.ts</DependentUpon>
+    <Content Include="src\app\shared\components\add-contact-form.component.html" />
+    <Content Include="src\app\shared\components\button.component.css">
+      <DependentUpon>button.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\components\button.component.scss">
-      <DependentUpon>button.component.ts</DependentUpon>
+    <Content Include="src\app\shared\components\button.component.html" />
+    <Content Include="src\app\shared\components\call-to-action.component.css">
+      <DependentUpon>call-to-action.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\components\call-to-action.component.html">
-      <DependentUpon>call-to-action.component.ts</DependentUpon>
+    <Content Include="src\app\shared\components\call-to-action.component.html" />
+    <Content Include="src\app\shared\components\content-block.component.css">
+      <DependentUpon>content-block.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\components\call-to-action.component.scss">
-      <DependentUpon>call-to-action.component.ts</DependentUpon>
+    <Content Include="src\app\shared\components\content-block.component.html" />
+    <Content Include="src\app\shared\components\header.component.css">
+      <DependentUpon>header.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\components\content-block.component.html">
-      <DependentUpon>content-block.component.ts</DependentUpon>
+    <Content Include="src\app\shared\components\header.component.html" />
+    <Content Include="src\app\shared\components\mega-header.component.css">
+      <DependentUpon>mega-header.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\shared\components\content-block.component.scss">
-      <DependentUpon>content-block.component.ts</DependentUpon>
-    </Content>
-    <Content Include="src\app\leads\lead.component.html">
-      <DependentUpon>lead.component.ts</DependentUpon>
-    </Content>
-    <Content Include="src\app\shared\components\header.component.html">
-      <DependentUpon>header.component.ts</DependentUpon>
-    </Content>
-    <Content Include="src\app\shared\components\mega-header.component.html">
-      <DependentUpon>mega-header.component.ts</DependentUpon>
-    </Content>
-    <Content Include="src\app\shared\components\mega-header.component.scss">
-      <DependentUpon>mega-header.component.ts</DependentUpon>
-    </Content>
+    <Content Include="src\app\shared\components\mega-header.component.html" />
     <Content Include="webpack.config.js" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
-    <Content Include="src\app\leads\lead.component.scss">
-      <DependentUpon>lead.component.ts</DependentUpon>
-    </Content>
-    <Content Include="src\app\shared\components\header.component.scss">
-      <DependentUpon>header.component.ts</DependentUpon>
-    </Content>
     <Content Include="src\app\app.component.scss">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
@@ -141,11 +127,30 @@
     <None Include="e2e\tsconfig.e2e.json" />
     <TypeScriptCompile Include="src\app\app.routing.ts" />
     <TypeScriptCompile Include="src\app\environment.ts" />
+    <TypeScriptCompile Include="src\app\leads\lead.component.ts">
+      <DependentUpon>lead.component.html</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\rxjs-extensions.ts" />
+    <TypeScriptCompile Include="src\app\shared\components\add-contact-form.component.ts">
+      <DependentUpon>add-contact-form.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\shared\components\button.component.ts">
+      <DependentUpon>button.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\shared\components\call-to-action.component.ts">
+      <DependentUpon>call-to-action.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\shared\components\content-block.component.ts">
+      <DependentUpon>content-block.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\shared\components\header.component.ts">
+      <DependentUpon>header.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\shared\components\mega-header.component.ts">
+      <DependentUpon>mega-header.component.html</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\shared\constants.ts" />
     <TypeScriptCompile Include="src\main.ts" />
-    <TypeScriptCompile Include="src\app\leads\lead.component.ts" />
-    <TypeScriptCompile Include="src\app\shared\components\header.component.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\leads\leads.module.ts" />
@@ -153,11 +158,6 @@
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\app\leads\api.service.ts" />
-    <TypeScriptCompile Include="src\app\shared\components\add-contact-form.component.ts" />
-    <TypeScriptCompile Include="src\app\shared\components\mega-header.component.ts" />
-    <TypeScriptCompile Include="src\app\shared\components\call-to-action.component.ts" />
-    <TypeScriptCompile Include="src\app\shared\components\content-block.component.ts" />
-    <TypeScriptCompile Include="src\app\shared\components\button.component.ts" />
     <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="src\app\shared\index.ts" />
   </ItemGroup>
