@@ -76,9 +76,10 @@
     <Content Include=".gitignore" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
-    <Content Include="src\app\app.component.html">
-      <DependentUpon>app.component.ts</DependentUpon>
+    <Content Include="src\app\app.component.css">
+      <DependentUpon>app.component.html</DependentUpon>
     </Content>
+    <Content Include="src\app\app.component.html" />
     <Content Include="src\app\leads\lead.component.css">
       <DependentUpon>lead.component.html</DependentUpon>
     </Content>
@@ -110,9 +111,6 @@
     <Content Include="webpack.config.js" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
-    <Content Include="src\app\app.component.scss">
-      <DependentUpon>app.component.ts</DependentUpon>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,6 +123,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="e2e\tsconfig.e2e.json" />
+    <TypeScriptCompile Include="src\app\app.component.ts">
+      <DependentUpon>app.component.html</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\app.routing.ts" />
     <TypeScriptCompile Include="src\app\environment.ts" />
     <TypeScriptCompile Include="src\app\leads\lead.component.ts">
@@ -151,7 +152,6 @@
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\shared\constants.ts" />
     <TypeScriptCompile Include="src\main.ts" />
-    <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\leads\leads.module.ts" />
     <TypeScriptCompile Include="src\app\leads\index.ts" />
