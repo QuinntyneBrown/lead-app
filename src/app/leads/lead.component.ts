@@ -10,7 +10,9 @@ import {ApiService} from "./api.service";
 export class LeadComponent implements OnInit {
     constructor(private _apiService: ApiService) { }
 
-    public ngOnInit() {
+    public async ngOnInit() {
+        const viewModel = await this._apiService.getContentBlocksBySlug();
+
         //this._apiService.getContentBlockBySlug("call-to-action")
         //    .subscribe(callToAction => this.callToAction = callToAction);
         //this._apiService.getContentBlockBySlug("header")
@@ -30,7 +32,9 @@ export class LeadComponent implements OnInit {
     };
     
     public tryToSaveContact(event:any) {
-        this._apiService.tryToSaveContact(event.contact)
-            .subscribe(x => { });
+        this._apiService.tryToSaveContact(event.detail.contact)
+            .subscribe(x => {
+
+            });
     }
 }

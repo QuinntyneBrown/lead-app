@@ -1,4 +1,4 @@
-import {Component,ViewEncapsulation} from "@angular/core";
+import {Component,ViewEncapsulation,Input} from "@angular/core";
 
 @Component({
     templateUrl: "./button.component.html",
@@ -6,4 +6,7 @@ import {Component,ViewEncapsulation} from "@angular/core";
     selector: "ce-button",
     encapsulation: ViewEncapsulation.Emulated
 })
-export class ButtonComponent {}
+export class ButtonComponent {
+    @Input()
+    public disabled: boolean = false;
+}
