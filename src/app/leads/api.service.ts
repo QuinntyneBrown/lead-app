@@ -11,20 +11,26 @@ export class ApiService {
         private _headersHelper: HeadersHelper,
         private _http: Http) { }
 
-    public async getContentBlocksBySlug(): Promise<any> {
+    public async getViewModel(): Promise<{
+        callToAction: any,
+        header: any,
+        contentBlock:any
+    }> {
         const responses = await Promise.all([
-            fetch(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug='call-to-action'`, { headers: this._headersHelper.getHeaders(), mode: 'cors' }),
-            fetch(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug='header'`, { headers: this._headersHelper.getHeaders(), mode: 'cors' }),
-            fetch(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug='content-block'`, { headers: this._headersHelper.getHeaders(), mode: 'cors' })
+            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug=call-to-action`),
+            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug=header`),
+            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug=content-block`)
         ]);
         
-        const json = await Promise.all(responses.map(r => r.json()));
-
         return {
-            callToAction: json[0],
-            header: json[1],
-            contentBlock: json[2]
+            callToAction: responses[0],
+            header: responses[1],
+            contentBlock: responses[2]
         };
+    }
+
+    public makeHttpGetRequest(url: string): Promise<any> {
+        return this._http.get(url, { headers: this._headersHelper.getAngularHeaders() }).map(data => data.json()).toPromise();
     }
 
     public tryToSaveContact(contact: any) {
