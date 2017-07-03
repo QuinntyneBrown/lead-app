@@ -17,15 +17,17 @@ export class ApiService {
         contentBlock:any
     }> {
         const responses = await Promise.all([
-            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug=call-to-action`),
-            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug=header`),
-            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/conentblock/getbyslug?slug=content-block`)
+            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/calltoactioncontentblock/getbyslug?slug=call-to-action`),
+            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/contentblock/getbyslug?slug=header`),
+            this.makeHttpGetRequest(`${this._configurationManager.contentBaseUrl}/api/contentblock/getbyslug?slug=content-block`)
         ]);
+
+
         
         return {
-            callToAction: responses[0],
-            header: responses[1],
-            contentBlock: responses[2]
+            callToAction: responses[0].callToActionContentBlock,
+            header: responses[1].contentBlock,
+            contentBlock: responses[2].contentBlock
         };
     }
 
