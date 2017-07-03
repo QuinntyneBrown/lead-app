@@ -12,7 +12,7 @@ interface Contact {
 
 @Component({
     templateUrl: "./add-contact-form.component.html",
-    styleUrls: ["./add-contact-form.component.css"],
+    styleUrls: ["./add-contact-form.component.css","./forms.css"],
     selector: "ce-add-contact-form",
     encapsulation: ViewEncapsulation.Native
 })
