@@ -1,3 +1,10 @@
 :host {
 
 }
+
+:host ce-button {
+    padding:0px 10px;
+    background-color:rgb(9,175,2);
+    --border-color:rgb(9,175,2);
+    --color:#fff;
+}
