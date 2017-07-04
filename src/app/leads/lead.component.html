@@ -6,7 +6,7 @@
                 [callToAction]="vm.callToAction.callToAction"
                 [finalNote]="vm.callToAction.finalNote">
 </ce-mega-header>
-<ce-content-block [headline1]="vm.contentBlock.headline1"
+<ce-content-block [headline1]="vm.contentBlock.heading1"
                   [imageUrl]="vm.contentBlock.imageUrl"
-                  [body]="vm.contentBlock.body"></ce-content-block>
+                  [body]="vm.contentBlock.htmlContent"></ce-content-block>
 <ce-add-contact-form (onSubmit)="tryToSaveContact($event)"></ce-add-contact-form>

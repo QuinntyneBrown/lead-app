@@ -11,7 +11,7 @@ export class LeadComponent implements OnInit {
     constructor(private _apiService: ApiService) { }
 
     public async ngOnInit() {
-        this.vm = await this._apiService.getViewModel();           
+        this.vm = await this._apiService.getViewModel();       
     }
 
     public vm: { callToAction: any, header: any, contentBlock: any } = {

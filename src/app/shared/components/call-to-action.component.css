@@ -14,4 +14,5 @@
     background-color:rgb(9,175,2);
     --border-color:rgb(9,175,2);
     --color:#fff;
+    width:calc(100% - 20px);
 }
