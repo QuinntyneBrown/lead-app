@@ -2,8 +2,9 @@
     display:block;
     background-color:rgba(0,0,0,0.25);
     padding:25px;
-    width: calc(100% - 50px);
+    width: calc(100% - 150px);
     color:#fff;
+    margin: 0px 50px;
 }
 .body {
     color:rgb(9,175,2);
@@ -15,4 +16,9 @@
     --border-color:rgb(9,175,2);
     --color:#fff;
     width:calc(100% - 20px);
+}
+
+p.final-note {
+    width:100%;
+    text-align:center;
 }
