@@ -7,3 +7,9 @@
 h2 {
     font-size:1.875em;
 }
+
+h2,h4 {
+    line-height:2em;
+    margin:0;
+    padding:0;
+}
