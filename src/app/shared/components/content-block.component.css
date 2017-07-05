@@ -12,3 +12,10 @@ h2 {
 p {
     text-align:center;
 }
+
+img {
+    display:block;
+    margin: 0 auto;
+    width:38.6%;
+    height:25.4%;
+}

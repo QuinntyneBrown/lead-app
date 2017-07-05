@@ -10,6 +10,8 @@ export class ContentBlockComponent {
     @Input()
     public imageUrl: string;
 
+    public _imageUrl: string = "src/images/vehicle.png";
+
     @Input()
     public headline1: string;
 
