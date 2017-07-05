@@ -16,6 +16,7 @@
     --border-color:rgb(9,175,2);
     --color:#fff;
     width:calc(100% - 20px);
+    font-weight:800;
 }
 
 p.final-note {

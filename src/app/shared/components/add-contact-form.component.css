@@ -10,4 +10,5 @@
     --border-color:rgb(9,175,2);
     --color:#fff;
     width:calc(100% - 22px);
+    font-weight:800;
 }
