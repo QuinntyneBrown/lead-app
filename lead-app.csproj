@@ -109,7 +109,7 @@
       <DependentUpon>mega-header.component.html</DependentUpon>
     </Content>
     <Content Include="src\app\shared\components\mega-header.component.html" />
-    <Content Include="src\images\vehicle.png" />
+    <Content Include="src\images\red-vehicle.png" />
     <Content Include="webpack.config.js" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
