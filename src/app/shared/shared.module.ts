@@ -6,7 +6,6 @@ import {ButtonComponent} from "./components/button.component";
 import {CallToActionComponent} from "./components/call-to-action.component";
 import {HeaderComponent} from "./components/header.component";
 import {MegaHeaderComponent} from "./components/mega-header.component";
-import {HeadersHelper} from "./headers-helper";
 import {ContentBlockComponent} from "./components/content-block.component";
 
 const declarables = [
@@ -18,7 +17,7 @@ const declarables = [
     MegaHeaderComponent
 ];
 
-const providers = [HeadersHelper];
+const providers = [];
 
 @NgModule({
     imports: [CommonModule, ReactiveFormsModule,FormsModule],

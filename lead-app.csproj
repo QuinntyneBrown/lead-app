@@ -153,7 +153,6 @@
     <TypeScriptCompile Include="src\app\shared\components\mega-header.component.ts">
       <DependentUpon>mega-header.component.html</DependentUpon>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\app\shared\headers-helper.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\leads\leads.module.ts" />
