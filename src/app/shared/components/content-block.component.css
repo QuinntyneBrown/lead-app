@@ -19,3 +19,8 @@ img {
     width:38.6%;
     height:25.4%;
 }
+
+div {
+    display:inline-block;
+    margin:0px 50px;
+}
