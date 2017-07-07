@@ -1,12 +1,18 @@
 /*https://stackoverflow.com/questions/2504071/how-do-i-combine-a-background-image-and-css3-gradient-on-the-same-element*/
 
 :host {
-
-    background-image: url('src/images/red-vehicle.png');
     display: block;
-    height:704px;
+    background-image: url('src/images/red-vehicle.png');  
+    background-repeat: no-repeat;
+    background-size:cover;  
+    
+    height:100%;
 }
 
 ce-header {
-    margin:30px 0px 70px 0px;
+    margin: 30px 50px 70px 50px;
+}
+
+ce-call-to-action {
+    margin-bottom:50px;
 }

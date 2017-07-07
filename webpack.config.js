@@ -32,7 +32,7 @@ module.exports = {
     },
     plugins: [
          new UglifyJsPlugin({
-             beautify: false, //debug
+             beautify: false,
              comments: false,
              mangle: {
                  screw_ie8: true,
