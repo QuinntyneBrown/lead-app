@@ -4,7 +4,7 @@ const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 module.exports = {
     entry: {
-        'vendor': ['./src/polyfills', './src/vendor'],
+        'vendor': ['./src/polyfills'],
         'app': './src/main'
     },
     output: {
@@ -13,7 +13,7 @@ module.exports = {
         publicPath: "dist/"
     },
     resolve: {
-        extensions: ['.ts', '.js', '.jpg', '.jpeg', '.gif', '.png', '.css', '.html']
+        extensions: ['.ts', '.css', '.html','.js']
     },
     module: {
         loaders: [
@@ -31,5 +31,16 @@ module.exports = {
         ]
     },
     plugins: [
+         new UglifyJsPlugin({
+             beautify: false, //debug
+             comments: false,
+             mangle: {
+                 screw_ie8: true,
+                 keep_fnames: true
+             },
+             compress: {
+                 screw_ie8: true
+             }
+         })
     ]
 };

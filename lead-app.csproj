@@ -119,6 +119,7 @@
     <Content Include="dist\vendor.js.map" />
     <None Include="Properties\PublishProfiles\lead-app - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\lead-app - Web Deploy.pubxml" />
+    <Content Include="tsconfig.aot.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -158,7 +159,6 @@
     <TypeScriptCompile Include="src\app\leads\leads.module.ts" />
     <TypeScriptCompile Include="src\app\leads\index.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
-    <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\app\leads\api.service.ts" />
     <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="src\app\shared\index.ts" />

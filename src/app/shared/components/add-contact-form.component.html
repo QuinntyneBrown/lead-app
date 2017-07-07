@@ -1,36 +1,35 @@
 <form novalidate [formGroup]="form">
     <input placeholder="Email" formControlName="email" />
-    <span *ngIf="form.get('email').touched && form.hasError('required', 'email')">
+    <span *ngIf="form.get('email').touched && form.hasError('required', ['email'])">
         required
     </span>
 
     <input placeholder="Firstname" formControlName="firstname" />
-    <span *ngIf="form.get('firstname').touched && form.hasError('required', 'firstname')">
+    <span *ngIf="form.get('firstname').touched && form.hasError('required', ['firstname'])">
         required
     </span>
 
     <input placeholder="Lastname" formControlName="lastname" />
-    <span *ngIf="form.get('lastname').touched && form.hasError('required', 'lastname')">
+    <span *ngIf="form.get('lastname').touched && form.hasError('required', ['lastname'])">
         required
     </span>
 
     <input placeholder="Phone Number" formControlName="phoneNumber" />
-    <span *ngIf="form.get('phoneNumber').touched && form.hasError('required', 'phoneNumber')">
+    <span *ngIf="form.get('phoneNumber').touched && form.hasError('required', ['phoneNumber'])">
         required
     </span>
 
     <input placeholder="Street Address" formControlName="streetAddress" />
-    <span *ngIf="form.get('streetAddress').touched && form.hasError('required', 'streetAddress')">
+    <span *ngIf="form.get('streetAddress').touched && form.hasError('required', ['streetAddress'])">
         required
     </span>
 
     <input placeholder="City" formControlName="city" />
-    <span *ngIf="form.get('city').touched && form.hasError('required', 'city')">
+    <span *ngIf="form.get('city').touched && form.hasError('required', ['city'])">
         required
     </span>
 
     <ce-button type="submit"
-            (click)="submitEvent.emit({ detail: { value: this.form.value } })"
             [disabled]="form.invalid">
         Submit
     </ce-button>

@@ -12,7 +12,6 @@
               width=device-width,
               height=device-height,
               target-densitydpi=device-dpi" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     <style>
         body, html {
             font-family:Montserrat;
@@ -25,5 +24,13 @@
     <app></app>
     <script src="dist/vendor.js"></script>
     <script src="dist/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Montserrat']
+            }
+        });
+    </script>
 </body>
 </html>

@@ -29,6 +29,7 @@ src/**/*.js.map
 
 dist
 tests
+aot
 
 # Visual Studio 2015 cache/options directory
 .vs/
