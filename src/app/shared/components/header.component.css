@@ -1,20 +1,20 @@
 :host {
-    display:block;
     color:rgb(233,77,37);
-    text-align:center;
+    display:block;
+    letter-spacing:-0.05em;
+    text-align:center;    
 }
 
 h2 {
     font-size:1.875em;
-    line-height:1.5em;
-}
-
-h2,h4 {
-    margin:0;
+    line-height:1em;
+    margin:0 0 8px 0;
     padding:0;
 }
 
 h4 {
     font-style:italic;
     line-height:1em;
+    margin:0;
+    padding:0;
 }
