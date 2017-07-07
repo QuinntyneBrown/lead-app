@@ -4,7 +4,7 @@ import {Component, ViewEncapsulation, Input} from "@angular/core";
     templateUrl: "./call-to-action.component.html",
     styleUrls: ["./call-to-action.component.css"],
     selector: "ce-call-to-action",
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class CallToActionComponent {
     @Input()

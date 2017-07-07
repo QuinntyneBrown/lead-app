@@ -5,6 +5,7 @@
     width: calc(100% - 150px);
     color:#fff;
     margin: 0px 50px;
+    max-width:600px;
 }
 
 .body {
@@ -24,4 +25,10 @@
 p.final-note {
     width:100%;
     text-align:center;
+}
+
+@media screen and (min-width: 750px) {
+    :host {
+        margin:0 auto;
+    }
 }

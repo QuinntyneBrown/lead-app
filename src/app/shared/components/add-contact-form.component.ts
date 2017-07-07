@@ -14,7 +14,7 @@ interface Contact {
     templateUrl: "./add-contact-form.component.html",
     styleUrls: ["./add-contact-form.component.css","./forms.css"],
     selector: "ce-add-contact-form",
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class AddContactFormComponent {    
     constructor() {

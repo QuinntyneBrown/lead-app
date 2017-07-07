@@ -5,7 +5,7 @@ import {ApiService} from "./api.service";
     templateUrl: "./lead.component.html",
     styleUrls: ["./lead.component.css"],
     selector: "ce-lead",
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class LeadComponent implements OnInit {
     constructor(private _apiService: ApiService) { }

@@ -4,7 +4,7 @@ import {Component, ViewEncapsulation, Input} from "@angular/core";
     templateUrl: "./mega-header.component.html",
     styleUrls: ["./mega-header.component.css"],
     selector: "ce-mega-header",
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class MegaHeaderComponent {    
     @Input()

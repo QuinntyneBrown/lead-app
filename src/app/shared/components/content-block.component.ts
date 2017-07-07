@@ -4,7 +4,7 @@ import {Component, ViewEncapsulation, Input} from "@angular/core";
     templateUrl: "./content-block.component.html",
     styleUrls: ["./content-block.component.css"],
     selector: "ce-content-block",
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class ContentBlockComponent {
     @Input()

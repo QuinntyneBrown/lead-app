@@ -4,7 +4,7 @@ import {Component, ViewEncapsulation, Input, ElementRef} from "@angular/core";
     templateUrl: "./header.component.html",
     styleUrls: ["./header.component.css"],
     selector: "ce-header",
-    encapsulation: ViewEncapsulation.Native
+    encapsulation: ViewEncapsulation.Emulated
 })
 export class HeaderComponent {
     constructor(private _elementRef: ElementRef) { }
