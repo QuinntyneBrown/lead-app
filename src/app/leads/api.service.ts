@@ -31,9 +31,10 @@ export class ApiService {
         return this._http.get(url, { headers: this.getHeaders() }).map(data => data.json()).toPromise();
     }
 
-    public tryToSaveContact(contact: any) {
+    public tryToSaveContact(contactRequest: any) {
         return this._http
-            .post(`${this._configurationManager.contactBaseUrl}/api/contact/add`, contact, { headers: this.getHeaders() })
+            //.post(`${this._configurationManager.contactBaseUrl}/api/contact/add`, contact, { headers: this.getHeaders() })
+            .post(`http://localhost:64411/api/contactrequest/add`, { contactRequest }, { headers: this.getHeaders() })
             .map(data => data.json())
             .catch(err => {
                 return Observable.of(false);

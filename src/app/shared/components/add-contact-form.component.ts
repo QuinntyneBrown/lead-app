@@ -22,7 +22,7 @@ export class AddContactFormComponent {
     }
 
     @Output()
-    public submitEvent: EventEmitter<Contact>;
+    public submitEvent: EventEmitter<any>;
 
     @Input()
     public buttonCaption: string = "Submit";
@@ -34,5 +34,5 @@ export class AddContactFormComponent {
         phoneNumber: new FormControl("", Validators.required),
         streetAddress: new FormControl("", Validators.required),
         city: new FormControl("", Validators.required)
-    });    
+    });        
 }

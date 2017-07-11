@@ -5,8 +5,6 @@ import {RouterModule} from '@angular/router';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 
-import "./rxjs-extensions";
-
 import {AppComponent} from './app.component';
 import {LeadsModule} from "./leads";
 
@@ -14,10 +12,6 @@ import {routing} from "./app.routing";
 
 const declarables = [
     AppComponent
-];
-
-const providers = [
-
 ];
 
 @NgModule({
@@ -31,7 +25,6 @@ const providers = [
         FormsModule,
         RouterModule
     ],
-    providers: providers,
     declarations: [declarables],
     exports: [declarables],
     bootstrap: [AppComponent]

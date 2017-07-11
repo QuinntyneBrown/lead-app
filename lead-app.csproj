@@ -135,7 +135,6 @@
     <TypeScriptCompile Include="src\app\leads\lead.component.ts">
       <DependentUpon>lead.component.html</DependentUpon>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\app\rxjs-extensions.ts" />
     <TypeScriptCompile Include="src\app\shared\components\add-contact-form.component.ts">
       <DependentUpon>add-contact-form.component.html</DependentUpon>
     </TypeScriptCompile>

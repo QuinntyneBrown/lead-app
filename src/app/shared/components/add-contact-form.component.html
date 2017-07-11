@@ -30,7 +30,8 @@
     </span>
 
     <ce-button type="submit"
-            [disabled]="form.invalid">
+            [disabled]="form.invalid"
+            (click)="submitEvent.emit({ detail: this.form.value })"   >
         Submit
     </ce-button>
 </form>
