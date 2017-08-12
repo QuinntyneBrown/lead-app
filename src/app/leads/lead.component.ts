@@ -23,7 +23,10 @@ export class LeadComponent implements OnInit {
         contentBlock: {}
     };
     
-    public async tryToSaveContact(event$: any) {                
-        await this._apiService.tryToSaveContact(event$.detail.contact).toPromise();
+    public tryToSaveContact(event$: any) {                
+        this._apiService.tryToSaveContact(event$.detail.contact).subscribe();
+        this.contact = {};
     }
+
+    public contact: any = {};
 }

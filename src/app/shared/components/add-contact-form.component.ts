@@ -23,6 +23,11 @@ export class AddContactFormComponent {
         this.submitEvent = new EventEmitter();
     }
 
+    @Input("contact")
+    public set contact(value) {
+        this.form.reset();
+    }
+
     @Output()
     public submitEvent: EventEmitter<any>;
 
@@ -30,11 +35,11 @@ export class AddContactFormComponent {
     public buttonCaption: string = "Submit";
 
     public form = new FormGroup({
-        email: new FormControl("", Validators.required),
-        firstname: new FormControl("", Validators.required),
-        lastname: new FormControl("", Validators.required),
-        phoneNumber: new FormControl("", Validators.required),
-        streetAddress: new FormControl("", Validators.required),
-        city: new FormControl("", Validators.required)
+        email: new FormControl(""),
+        firstname: new FormControl(""),
+        lastname: new FormControl(""),
+        phoneNumber: new FormControl(""),
+        streetAddress: new FormControl(""),
+        city: new FormControl("")
     });        
 }
