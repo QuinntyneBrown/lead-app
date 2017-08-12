@@ -102,7 +102,6 @@
       <DependentUpon>content-block.component.html</DependentUpon>
     </Content>
     <Content Include="src\app\shared\components\content-block.component.html" />
-    <Content Include="src\app\shared\components\forms.css" />
     <Content Include="src\app\shared\components\header.component.css">
       <DependentUpon>header.component.html</DependentUpon>
     </Content>
@@ -112,6 +111,7 @@
     </Content>
     <Content Include="src\app\shared\components\mega-header.component.html" />
     <Content Include="src\images\red-vehicle.png" />
+    <Content Include="src\styles\forms.css" />
     <Content Include="webpack.config.js" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
@@ -153,6 +153,9 @@
     <TypeScriptCompile Include="src\app\shared\components\mega-header.component.ts">
       <DependentUpon>mega-header.component.html</DependentUpon>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\shared\constants.ts" />
+    <TypeScriptCompile Include="src\app\shared\interceptors\tenant.interceptor.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\storage.service.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\leads\leads.module.ts" />

@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {Http,Headers,RequestOptionsArgs} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {ConfigurationManager} from "../configuration";
 
@@ -7,7 +7,7 @@ import {ConfigurationManager} from "../configuration";
 export class ApiService {
     constructor(
         private _configurationManager: ConfigurationManager,
-        private _http: Http) { }
+        private _httpClient: HttpClient) { }
 
     public async getViewModel(): Promise<{
         callToAction: any,
@@ -28,22 +28,14 @@ export class ApiService {
     }
 
     public get(url: string): Promise<any> {
-        return this._http.get(url, { headers: this.getHeaders() }).map(data => data.json()).toPromise();
+        return this._httpClient.get(url).toPromise();
     }
 
     public tryToSaveContact(contactRequest: any) {
-        return this._http
-            //.post(`${this._configurationManager.contactBaseUrl}/api/contact/add`, contact, { headers: this.getHeaders() })
-            .post(`http://localhost:64411/api/contactrequest/add`, { contactRequest }, { headers: this.getHeaders() })
-            .map(data => data.json())
+        return this._httpClient
+            .post(`${this._configurationManager.contactBaseUrl}/api/contacts/add`, { contactRequest })            
             .catch(err => {
                 return Observable.of(false);
             });
-    }    
-
-    public getHeaders() {
-        let headers = new Headers();
-        headers.append("Tenant", "489902a0-a39d-4556-94b4-544d33d5ff5b");
-        return headers;
-    }
+    }        
 }
