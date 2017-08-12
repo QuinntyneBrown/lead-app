@@ -31,9 +31,9 @@ export class ApiService {
         return this._httpClient.get(url).toPromise();
     }
 
-    public tryToSaveContact(contactRequest: any) {
+    public tryToSaveContact(contact: any) {        
         return this._httpClient
-            .post(`${this._configurationManager.contactBaseUrl}/api/contacts/add`, { contactRequest })            
+            .post(`${this._configurationManager.contactBaseUrl}/api/contacts/add`, { contact })            
             .catch(err => {
                 return Observable.of(false);
             });

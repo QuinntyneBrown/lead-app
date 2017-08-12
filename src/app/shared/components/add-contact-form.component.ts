@@ -16,8 +16,7 @@ interface Contact {
         "../../../styles/forms.css",
         "./add-contact-form.component.css"
     ],
-    selector: "ce-add-contact-form",
-    encapsulation: ViewEncapsulation.Emulated
+    selector: "ce-add-contact-form"    
 })
 export class AddContactFormComponent {    
     constructor() {

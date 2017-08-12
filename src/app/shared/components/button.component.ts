@@ -1,10 +1,9 @@
-import {Component,ViewEncapsulation,Input} from "@angular/core";
+import {Component,Input} from "@angular/core";
 
 @Component({
     templateUrl: "./button.component.html",
     styleUrls: ["./button.component.css"],
-    selector: "ce-button",
-    encapsulation: ViewEncapsulation.Emulated
+    selector: "ce-button"
 })
 export class ButtonComponent {
     @Input()

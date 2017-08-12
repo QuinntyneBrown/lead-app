@@ -31,7 +31,7 @@
 
     <ce-button type="submit"
             [disabled]="form.invalid"
-            (click)="submitEvent.emit({ detail: this.form.value })"   >
+            (click)="submitEvent.emit({ detail: { contact: this.form.value } })"   >
         Submit
     </ce-button>
 </form>
