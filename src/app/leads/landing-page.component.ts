@@ -13,8 +13,8 @@ export class LandingPageComponent implements OnInit {
         private _router: Router
     ) { }
 
-    public async ngOnInit() {
-        this.vm = await this._apiService.getViewModel();
+    public ngOnInit() {
+        this._apiService.getViewModel().subscribe(x => this.vm = x);
     }
 
     public vm: { callToAction: any, header: any, contentBlock: any } = {

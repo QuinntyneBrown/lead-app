@@ -5,7 +5,7 @@ import { Router } from "@angular/router";
 @Component({
     templateUrl: "./add-contact-page.component.html",
     styleUrls: ["./add-contact-page.component.css"],
-    selector: "cs-add-contact-page"
+    selector: "ce-add-contact-page"
 })
 export class AddContactPageComponent implements OnInit {
     constructor(
@@ -13,8 +13,8 @@ export class AddContactPageComponent implements OnInit {
         private _router: Router
     ) { }
 
-    public async ngOnInit() {
-        this.vm = await this._apiService.getViewModel();
+    public ngOnInit() {
+        this._apiService.getViewModel().subscribe(x => this.vm = x);        
     }
 
     public vm: { callToAction: any, header: any, contentBlock: any } = {
