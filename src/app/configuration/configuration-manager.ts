@@ -4,4 +4,5 @@
 export class ConfigurationManager {
     public contentBaseUrl: string = "http://contentblock.quinntynebrown.com";
     public contactBaseUrl: string = "http://contact.quinntynebrown.com";
+    public appTitle: string = "Rodney The Finance Guy";
 }
