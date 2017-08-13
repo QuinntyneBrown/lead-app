@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { ConfigurationManager } from "./configuration/configuration-manager";
+import { ConfigurationManager } from "./shared/services/configuration-manager";
 
 @Component({
     templateUrl: "./app.component.html",

@@ -1,4 +1,5 @@
 <ce-content-block [headline1]="vm.contentBlock.heading1"
                   [imageUrl]="vm.contentBlock.imageUrl"
                   [body]="vm.contentBlock.htmlContent"></ce-content-block>
-<ce-add-contact-form (submitEvent)="tryToSaveContact($event)" [contact]="contact"></ce-add-contact-form>
+<ce-add-contact-form (submitEvent)="tryToSaveContact($event)" 
+                     [contact]="contact"></ce-add-contact-form>

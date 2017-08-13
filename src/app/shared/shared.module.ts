@@ -9,6 +9,7 @@ import {HeaderComponent} from "./components/header.component";
 import {MegaHeaderComponent} from "./components/mega-header.component";
 import {ContentBlockComponent} from "./components/content-block.component";
 
+import {ConfigurationManager} from "./services/configuration-manager";
 import {Storage} from "./services/storage.service";
 import {TenantInterceptor} from "./interceptors/tenant.interceptor";
 
@@ -22,6 +23,7 @@ const declarables = [
 ];
 
 const providers = [
+    ConfigurationManager,
     Storage,
     {
         provide: HTTP_INTERCEPTORS,

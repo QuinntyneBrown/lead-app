@@ -1,5 +1,7 @@
 ﻿import {Routes,RouterModule} from '@angular/router';
-import {LandingPageComponent,AddContactPageComponent,ThankYouPageComponent} from "./leads";
+import { LandingPageComponent} from "./pages";
+import { AddContactPageComponent } from "./pages";
+import { ThankYouPageComponent } from "./pages";
 
 export const routes: Routes = [
     {

@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {ConfigurationManager} from "../configuration";
+import {ConfigurationManager} from "./shared/services/configuration-manager";
 import 'rxjs/add/observable/forkJoin';
 
 @Injectable()

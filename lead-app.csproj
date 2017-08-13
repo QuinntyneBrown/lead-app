@@ -7,8 +7,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{116211A4-56A1-48A6-8F47-EE167854F91B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -23,8 +22,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.4</TypeScriptToolsVersion>
     <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
@@ -82,13 +80,13 @@
       <DependentUpon>app.component.html</DependentUpon>
     </Content>
     <Content Include="src\app\app.component.html" />
-    <Content Include="src\app\leads\add-contact-page.component.css">
+    <Content Include="src\app\pages\add-contact-page.component.css">
       <DependentUpon>add-contact-page.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\landing-page.component.css">
+    <Content Include="src\app\pages\landing-page.component.css">
       <DependentUpon>landing-page.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\thank-you-page.component.css">
+    <Content Include="src\app\pages\thank-you-page.component.css">
       <DependentUpon>thank-you-page.component.html</DependentUpon>
     </Content>
     <Content Include="src\app\shared\components\add-contact-form.component.css">
@@ -125,9 +123,9 @@
     <None Include="Properties\PublishProfiles\lead-app - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\lead-app - Web Deploy.pubxml" />
     <Content Include="tsconfig.aot.json" />
-    <Content Include="src\app\leads\landing-page.component.html" />
-    <Content Include="src\app\leads\add-contact-page.component.html" />
-    <Content Include="src\app\leads\thank-you-page.component.html" />
+    <Content Include="src\app\pages\landing-page.component.html" />
+    <Content Include="src\app\pages\add-contact-page.component.html" />
+    <Content Include="src\app\pages\thank-you-page.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -138,15 +136,15 @@
       <DependentUpon>app.component.html</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\app.routing.ts" />
-    <TypeScriptCompile Include="src\app\configuration\configuration-manager.ts" />
+    <TypeScriptCompile Include="src\app\shared\services\configuration-manager.ts" />
     <TypeScriptCompile Include="src\app\environment.ts" />
-    <TypeScriptCompile Include="src\app\leads\add-contact-page.component.ts">
+    <TypeScriptCompile Include="src\app\pages\add-contact-page.component.ts">
       <DependentUpon>add-contact-page.component.html</DependentUpon>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\app\leads\landing-page.component.ts">
+    <TypeScriptCompile Include="src\app\pages\landing-page.component.ts">
       <DependentUpon>landing-page.component.html</DependentUpon>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\app\leads\thank-you-page.component.ts">
+    <TypeScriptCompile Include="src\app\pages\thank-you-page.component.ts">
       <DependentUpon>thank-you-page.component.html</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\shared\components\add-contact-form.component.ts">
@@ -172,14 +170,11 @@
     <TypeScriptCompile Include="src\app\shared\services\storage.service.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
-    <TypeScriptCompile Include="src\app\leads\leads.module.ts" />
-    <TypeScriptCompile Include="src\app\leads\index.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
-    <TypeScriptCompile Include="src\app\leads\api.service.ts" />
+    <TypeScriptCompile Include="src\app\api.service.ts" />
     <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="src\app\shared\index.ts" />
-    <TypeScriptCompile Include="src\app\configuration\configuration.module.ts" />
-    <TypeScriptCompile Include="src\app\configuration\index.ts" />
+    <TypeScriptCompile Include="src\app\pages\index.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -204,8 +199,7 @@
           <IISUrl>http://localhost:53063/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

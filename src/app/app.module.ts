@@ -4,27 +4,40 @@ import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
+import {SharedModule} from "./shared";
+import {AddContactPageComponent} from "./pages";
+import {LandingPageComponent} from "./pages";
+import {ThankYouPageComponent} from "./pages";
 
 import {AppComponent} from './app.component';
-import {LeadsModule} from "./leads";
+import { ApiService } from "./api.service";
 
 import {routing} from "./app.routing";
 
 const declarables = [
-    AppComponent
+    AppComponent,
+    AddContactPageComponent,
+    LandingPageComponent,
+    ThankYouPageComponent
+];
+
+const providers = [
+    ApiService
 ];
 
 @NgModule({
     imports: [
-        LeadsModule,
+        
         routing,
 
         BrowserModule,
         HttpModule,
         CommonModule,
         FormsModule,
-        RouterModule
+        RouterModule,
+        SharedModule
     ],
+    providers:providers,
     declarations: [declarables],
     exports: [declarables],
     bootstrap: [AppComponent]
