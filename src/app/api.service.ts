@@ -1,8 +1,10 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {ErrorObservable} from 'rxjs/observable/ErrorObservable';
 import {ConfigurationManager} from "./shared/services/configuration-manager";
 import 'rxjs/add/observable/forkJoin';
+import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class ApiService {
@@ -33,8 +35,9 @@ export class ApiService {
     public tryToSaveContact(contact: any) {        
         return this._httpClient
             .post(`${this._configurationManager.contactBaseUrl}/api/contacts/add`, { contact })            
-            .catch(err => {
-                return Observable.of(false);
+            .catch((error:Error) => {
+                console.log(`Error trying to save contact - ${error.message}`);
+                return ErrorObservable.throw(error);
             });
     }        
 }
