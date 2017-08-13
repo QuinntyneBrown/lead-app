@@ -2,13 +2,15 @@
     color:rgb(233,77,37);
     display:block;
     letter-spacing:-0.05em;
-    text-align:center;    
+    text-align:center; 
+    padding:40px 0 0 0;
+    min-height:86px;       
 }
 
 h2 {
     font-size:1.875em;
-    line-height:1em;
-    margin:0 0 8px 0;
+    line-height:1.5em;
+    margin:0px 0px 0px 0px;
     padding:0;
 }
 

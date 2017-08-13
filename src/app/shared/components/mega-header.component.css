@@ -6,13 +6,13 @@
     background-repeat: no-repeat;
     background-size:cover;  
     
-    height:100%;
+    min-height:100vh;
 }
 
 ce-header {
-    margin: 30px 25px 70px 25px;
+    margin: 0px 25px 0px 25px;
 }
 
 ce-call-to-action {
-    margin-bottom:50px;
+
 }

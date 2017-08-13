@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation, Input} from "@angular/core";
+import {Component, ViewEncapsulation, Input, Output,EventEmitter} from "@angular/core";
 
 @Component({
     templateUrl: "./call-to-action.component.html",
@@ -7,6 +7,10 @@ import {Component, ViewEncapsulation, Input} from "@angular/core";
     encapsulation: ViewEncapsulation.Emulated
 })
 export class CallToActionComponent {
+    constructor() {
+        this.callToActionClick = new EventEmitter();
+    }
+
     @Input()
     public headline: string;
 
@@ -21,4 +25,7 @@ export class CallToActionComponent {
 
     @Input()
     public finalNote: string;
+
+    @Output()
+    public callToActionClick: EventEmitter<any>;
 }

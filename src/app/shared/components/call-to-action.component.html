@@ -2,5 +2,5 @@
 <div class="body" [innerHTML]="body"></div>
 <p class="call-to-action">{{ callToAction }}</p>
 
-<ce-button>{{ buttonCaption }}</ce-button>
+<ce-button (click)="callToActionClick.emit()">{{ buttonCaption }}</ce-button>
 <p class="final-note">{{ finalNote }}</p>

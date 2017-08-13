@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation, Input} from "@angular/core";
+import {Component, ViewEncapsulation, Input, EventEmitter, Output} from "@angular/core";
 
 @Component({
     templateUrl: "./mega-header.component.html",
@@ -6,7 +6,11 @@ import {Component, ViewEncapsulation, Input} from "@angular/core";
     selector: "ce-mega-header",
     encapsulation: ViewEncapsulation.Emulated
 })
-export class MegaHeaderComponent {    
+export class MegaHeaderComponent {  
+    constructor() {
+        this.callToActionClick = new EventEmitter();
+    }
+      
     @Input()
     public headline: string;
 
@@ -27,4 +31,7 @@ export class MegaHeaderComponent {
 
     @Input()
     public finalNote: string;
+
+    @Output()
+    public callToActionClick: EventEmitter<any>;
 }

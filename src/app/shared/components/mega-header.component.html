@@ -4,4 +4,6 @@
                    [callToAction]="callToAction"
                    [buttonCaption]="buttonCaption"
                    [finalNote]="finalNote"
-                   [body]="body"></ce-call-to-action>
+                   [body]="body"
+                   (callToActionClick)="callToActionClick.emit($event)"
+                   ></ce-call-to-action>

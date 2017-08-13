@@ -82,10 +82,15 @@
       <DependentUpon>app.component.html</DependentUpon>
     </Content>
     <Content Include="src\app\app.component.html" />
-    <Content Include="src\app\leads\lead.component.css">
-      <DependentUpon>lead.component.html</DependentUpon>
+    <Content Include="src\app\leads\add-contact-page.component.css">
+      <DependentUpon>add-contact-page.component.html</DependentUpon>
     </Content>
-    <Content Include="src\app\leads\lead.component.html" />
+    <Content Include="src\app\leads\landing-page.component.css">
+      <DependentUpon>landing-page.component.html</DependentUpon>
+    </Content>
+    <Content Include="src\app\leads\thank-you-page.component.css">
+      <DependentUpon>thank-you-page.component.html</DependentUpon>
+    </Content>
     <Content Include="src\app\shared\components\add-contact-form.component.css">
       <DependentUpon>add-contact-form.component.html</DependentUpon>
     </Content>
@@ -120,6 +125,9 @@
     <None Include="Properties\PublishProfiles\lead-app - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\lead-app - Web Deploy.pubxml" />
     <Content Include="tsconfig.aot.json" />
+    <Content Include="src\app\leads\landing-page.component.html" />
+    <Content Include="src\app\leads\add-contact-page.component.html" />
+    <Content Include="src\app\leads\thank-you-page.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -132,8 +140,14 @@
     <TypeScriptCompile Include="src\app\app.routing.ts" />
     <TypeScriptCompile Include="src\app\configuration\configuration-manager.ts" />
     <TypeScriptCompile Include="src\app\environment.ts" />
-    <TypeScriptCompile Include="src\app\leads\lead.component.ts">
-      <DependentUpon>lead.component.html</DependentUpon>
+    <TypeScriptCompile Include="src\app\leads\add-contact-page.component.ts">
+      <DependentUpon>add-contact-page.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\leads\landing-page.component.ts">
+      <DependentUpon>landing-page.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\leads\thank-you-page.component.ts">
+      <DependentUpon>thank-you-page.component.html</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\app\shared\components\add-contact-form.component.ts">
       <DependentUpon>add-contact-form.component.html</DependentUpon>
